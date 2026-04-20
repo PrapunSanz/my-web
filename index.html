@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vive el eclipse total de sol del 12 de agosto de 2026 desde Arguedas, Navarra. El mejor lugar de España para disfrutar de un espectáculo astronómico único en las Bardenas Reales.">
+    <title>Arguedas 2026 · Eclipse Total de Sol · 12 Agosto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Fondo estrellado -->
+    <div class="stars" id="stars"></div>
+
+    <!-- NAVEGACION -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#inicio" class="logo">
+                <span class="logo-icon">☀</span>
+                <span>Arguedas 2026</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#evento">El Eclipse</a></li>
+                <li><a href="#porque">¿Por qué Arguedas?</a></li>
+                <li><a href="#miradores">Miradores</a></li>
+                <li><a href="#experiencias">Experiencias</a></li>
+                <li><a href="#info">Info Práctica</a></li>
+                <li><a href="#reserva" class="btn-nav">Reserva</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" id="inicio">
+        <div class="hero-bg">
+            <div class="sun-container">
+                <div class="sun"></div>
+                <div class="moon"></div>
+                <div class="corona"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-tagline">12 · AGOSTO · 2026</p>
+            <h1 class="hero-title">
+                <span class="line-1">El día</span>
+                <span class="line-2">que el cielo</span>
+                <span class="line-3">se detiene</span>
+            </h1>
+            <p class="hero-subtitle">
+                Vive el eclipse <strong>total</strong> de sol desde el corazón de las
+                <strong>Bardenas Reales</strong>. Arguedas, Navarra.
+            </p>
+
+            <!-- Countdown -->
+            <div class="countdown" id="countdown">
+                <div class="countdown-box">
+                    <span class="countdown-num" id="days">—</span>
+                    <span class="countdown-label">Días</span>
+                </div>
+                <div class="countdown-box">
+                    <span class="countdown-num" id="hours">—</span>
+                    <span class="countdown-label">Horas</span>
+                </div>
+                <div class="countdown-box">
+                    <span class="countdown-num" id="minutes">—</span>
+                    <span class="countdown-label">Minutos</span>
+                </div>
+                <div class="countdown-box">
+                    <span class="countdown-num" id="seconds">—</span>
+                    <span class="countdown-label">Segundos</span>
+                </div>
+            </div>
+
+            <div class="hero-cta">
+                <a href="#reserva" class="btn btn-primary">Reserva tu plaza</a>
+                <a href="#evento" class="btn btn-secondary">Descubre más</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Desliza</span>
+            <div class="scroll-line"></div>
+        </div>
+    </header>
+
+    <!-- EL EVENTO -->
+    <section class="section event" id="evento">
+        <div class="container">
+            <div class="section-head">
+                <span class="eyebrow">El acontecimiento</span>
+                <h2>Un eclipse total de sol sobre España</h2>
+                <p class="lead">
+                    Después de más de un siglo, la sombra de la Luna volverá a cubrir la península ibérica.
+                    Y Arguedas, en plena reserva natural de las <strong>Bardenas Reales</strong>,
+                    se encuentra en el centro de la franja de totalidad.
+                </p>
+            </div>
+
+            <div class="event-stats">
+                <div class="stat">
+                    <span class="stat-num">1<sup>m</sup> 48<sup>s</sup></span>
+                    <span class="stat-desc">Duración aproximada de la totalidad en Arguedas</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">100%</span>
+                    <span class="stat-desc">Cobertura solar en el momento máximo</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">20:30 h</span>
+                    <span class="stat-desc">Hora aproximada del máximo eclipse</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">1905</span>
+                    <span class="stat-desc">Último eclipse total visible en la península</span>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <h3>Fases del eclipse</h3>
+                <div class="timeline-track">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-time">≈ 19:30</span>
+                            <h4>Primer contacto</h4>
+                            <p>La Luna comienza a morder el disco solar. Necesario gafas homologadas.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-time">≈ 20:29</span>
+                            <h4>Totalidad</h4>
+                            <p>Oscurece. La corona solar aparece. El único momento seguro para mirar sin protección.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-time">≈ 20:31</span>
+                            <h4>Fin de la totalidad</h4>
+                            <p>Vuelve la luz con el famoso "anillo de diamante". Gafas de nuevo.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-time">≈ 21:25</span>
+                            <h4>Último contacto</h4>
+                            <p>El sol se pone eclipsado tras las Bardenas. Un final inolvidable.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="timeline-note">
+                    * Horarios estimados. Se actualizarán con datos oficiales del IGN conforme se acerque la fecha.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ¿POR QUÉ ARGUEDAS? -->
+    <section class="section why" id="porque">
+        <div class="container">
+            <div class="section-head">
+                <span class="eyebrow">El mejor lugar</span>
+                <h2>¿Por qué Arguedas?</h2>
+                <p class="lead">
+                    No todos los sitios de España verán el eclipse igual.
+                    Arguedas reúne las condiciones perfectas para que este momento sea irrepetible.
+                </p>
+            </div>
+
+            <div class="reasons-grid">
+                <article class="reason-card">
+                    <div class="reason-icon">◎</div>
+                    <h3>En la franja de totalidad</h3>
+                    <p>Situada dentro del eje central del eclipse, Arguedas ofrece una totalidad prolongada y un máximo espectacular.</p>
+                </article>
+
+                <article class="reason-card">
+                    <div class="reason-icon">☁</div>
+                    <h3>Cielos despejados</h3>
+                    <p>La climatología de agosto en la Ribera navarra es de las más estables y secas de España: la probabilidad de cielo limpio roza el 90%.</p>
+                </article>
+
+                <article class="reason-card">
+                    <div class="reason-icon">▲</div>
+                    <h3>Las Bardenas Reales</h3>
+                    <p>Un semidesierto único en Europa, Reserva de la Biosfera, sin contaminación lumínica y con horizontes infinitos.</p>
+                </article>
+
+                <article class="reason-card">
+                    <div class="reason-icon">◈</div>
+                    <h3>Paisaje cinematográfico</h3>
+                    <p>El Castildetierra, las cárcavas y los planos de la Negra son escenarios naturales perfectos para vivir (y fotografiar) el eclipse.</p>
+                </article>
+
+                <article class="reason-card">
+                    <div class="reason-icon">⬢</div>
+                    <h3>Fácil de llegar</h3>
+                    <p>A una hora de Pamplona, Logroño y Zaragoza. Bien conectada por la AP-68 y la AP-15.</p>
+                </article>
+
+                <article class="reason-card">
+                    <div class="reason-icon">✦</div>
+                    <h3>Destino preparado</h3>
+                    <p>El municipio ha organizado un dispositivo especial con zonas habilitadas, astrónomos y actividades durante toda la jornada.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- MIRADORES -->
+    <section class="section spots" id="miradores">
+        <div class="container">
+            <div class="section-head">
+                <span class="eyebrow">Dónde verlo</span>
+                <h2>Miradores del eclipse</h2>
+                <p class="lead">
+                    Tres enclaves privilegiados habilitados para vivir el eclipse con todas las garantías.
+                </p>
+            </div>
+
+            <div class="spots-list">
+                <article class="spot">
+                    <div class="spot-img spot-img-1"></div>
+                    <div class="spot-info">
+                        <span class="spot-num">01</span>
+                        <h3>Mirador del Castildetierra</h3>
+                        <p>
+                            El icono de las Bardenas. Una chimenea natural de arenisca que se recorta sobre el cielo.
+                            Ver el sol eclipsado justo sobre esta formación es una imagen para toda la vida.
+                        </p>
+                        <ul class="spot-features">
+                            <li>Aforo limitado · 1.500 plazas</li>
+                            <li>Telescopios guiados</li>
+                            <li>Zona de fotografía</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="spot reverse">
+                    <div class="spot-img spot-img-2"></div>
+                    <div class="spot-info">
+                        <span class="spot-num">02</span>
+                        <h3>Alto de Aguilares</h3>
+                        <p>
+                            360° sobre la Bardena Blanca. El mejor lugar para ver llegar la sombra de la Luna
+                            a kilómetros de distancia y contemplar el amanecer y atardecer simultáneos en el horizonte.
+                        </p>
+                        <ul class="spot-features">
+                            <li>Aforo limitado · 800 plazas</li>
+                            <li>Divulgación astronómica en directo</li>
+                            <li>Acceso en vehículo autorizado</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="spot">
+                    <div class="spot-img spot-img-3"></div>
+                    <div class="spot-info">
+                        <span class="spot-num">03</span>
+                        <h3>Recinto Sanadrián</h3>
+                        <p>
+                            A los pies del pueblo, a pasos del Santuario del Yugo. Pensado para familias y grupos:
+                            gradas, food trucks, zona infantil y pantallas gigantes con retransmisión del eclipse.
+                        </p>
+                        <ul class="spot-features">
+                            <li>Aforo amplio · 5.000 plazas</li>
+                            <li>Acceso adaptado</li>
+                            <li>Gafas homologadas incluidas</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCIAS -->
+    <section class="section experiences" id="experiencias">
+        <div class="container">
+            <div class="section-head">
+                <span class="eyebrow">Programa</span>
+                <h2>Tres días de experiencias</h2>
+                <p class="lead">
+                    El eclipse dura minutos. La experiencia, un fin de semana entero.
+                </p>
+            </div>
+
+            <div class="exp-grid">
+                <div class="exp-card">
+                    <span class="exp-day">10 AGO</span>
+                    <h3>Apertura · Noche de estrellas</h3>
+                    <p>Observación nocturna en las Bardenas con astrónomos profesionales. Cena bajo las Perseidas.</p>
+                </div>
+                <div class="exp-card exp-card-highlight">
+                    <span class="exp-day">12 AGOSTO</span>
+                    <h3>DÍA DEL ECLIPSE</h3>
+                    <p>Rutas guiadas al amanecer, talleres, conciertos al atardecer y el eclipse total al anochecer.</p>
+                </div>
+                <div class="exp-card">
+                    <span class="exp-day">13 AGO</span>
+                    <h3>Cierre · Gastro Ribera</h3>
+                    <p>Mercado de productores locales, vinos DO Navarra, verduras de la Ribera y concierto final.</p>
+                </div>
+            </div>
+
+            <div class="activities">
+                <div class="activity">
+                    <h4>◇ Rutas en BTT y 4x4</h4>
+                    <p>Descubre las Bardenas por rutas homologadas con guías certificados.</p>
+                </div>
+                <div class="activity">
+                    <h4>◇ Talleres de fotografía</h4>
+                    <p>Aprende a fotografiar la corona solar y los paisajes lunares de la Bardena.</p>
+                </div>
+                <div class="activity">
+                    <h4>◇ Vuelos en globo</h4>
+                    <p>Plazas limitadas para sobrevolar la reserva al amanecer del día 12.</p>
+                </div>
+                <div class="activity">
+                    <h4>◇ Charlas astronómicas</h4>
+                    <p>Ponencias con astrofísicos del Planetario de Pamplona y la SEA.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INFO PRACTICA -->
+    <section class="section info" id="info">
+        <div class="container">
+            <div class="section-head">
+                <span class="eyebrow">Prepara tu viaje</span>
+                <h2>Información práctica</h2>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-block">
+                    <h3>Cómo llegar</h3>
+                    <p><strong>En coche:</strong> AP-68 salida 16 · NA-134 desde Pamplona.</p>
+                    <p><strong>Aeropuertos:</strong> Zaragoza (90 km), Pamplona (75 km), Bilbao (200 km).</p>
+                    <p><strong>Tren:</strong> Estación de Tudela (13 km) con servicio lanzadera especial.</p>
+                </div>
+
+                <div class="info-block">
+                    <h3>Dónde dormir</h3>
+                    <p>Alojamientos rurales, hoteles de las Bardenas, cuevas tradicionales y zonas habilitadas para autocaravanas y acampada.</p>
+                    <p><em>Reserva con antelación: la demanda será excepcional.</em></p>
+                </div>
+
+                <div class="info-block">
+                    <h3>Seguridad solar</h3>
+                    <p>Nunca mires al sol sin <strong>gafas homologadas ISO 12312-2</strong>, salvo durante los segundos de totalidad.</p>
+                    <p>Gafas oficiales incluidas con tu entrada. Prohibido el uso de binoculares o cámaras sin filtro solar.</p>
+                </div>
+
+                <div class="info-block">
+                    <h3>Qué llevar</h3>
+                    <p>Protección solar, agua abundante, sombrero, calzado cerrado, linterna y algo de abrigo ligero para después del eclipse.</p>
+                    <p>Las Bardenas son un entorno protegido: todo lo que entra, sale contigo.</p>
+                </div>
+
+                <div class="info-block">
+                    <h3>Movilidad el 12-A</h3>
+                    <p>Se activará un plan especial con cortes de tráfico, aparcamientos disuasorios y lanzaderas gratuitas desde Arguedas hacia los miradores.</p>
+                </div>
+
+                <div class="info-block">
+                    <h3>Meteorología</h3>
+                    <p>Agosto en Arguedas: probabilidad de cielo despejado superior al <strong>85%</strong>. Temperatura media 28ºC al atardecer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq">
+        <div class="container">
+            <div class="section-head">
+                <span class="eyebrow">Dudas frecuentes</span>
+                <h2>Preguntas que seguro te haces</h2>
+            </div>
+
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>¿Hace falta entrada para ver el eclipse?</summary>
+                    <p>El eclipse es visible desde cualquier punto de Arguedas. Las entradas son únicamente para acceder a los miradores habilitados dentro del Parque Natural, con aforo limitado, gafas incluidas y programa divulgativo.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Es seguro traer niños?</summary>
+                    <p>Totalmente. Habrá zonas familiares, actividades infantiles y monitores especializados. Es una ocasión única para que los más pequeños vivan la ciencia en directo.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Se podrá acampar en las Bardenas?</summary>
+                    <p>Dentro del Parque Natural no está permitido acampar. El Ayuntamiento habilitará zonas específicas para acampada y autocaravanas en las afueras del pueblo con todos los servicios.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Y si está nublado?</summary>
+                    <p>La estadística juega a nuestro favor: el agosto navarro suele ser muy despejado. Aun así, la experiencia del día y noche repentinos se vive igual incluso con nubes. Y tendremos retransmisión en pantalla de la totalidad desde zonas cercanas.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cuándo puedo reservar?</summary>
+                    <p>Las reservas se abren por fases. Regístrate en el formulario para recibir el aviso en cuanto se abra tu grupo preferente.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESERVA / CONTACTO -->
+    <section class="section booking" id="reserva">
+        <div class="container">
+            <div class="booking-wrap">
+                <div class="booking-text">
+                    <span class="eyebrow">Reserva tu sitio</span>
+                    <h2>Un instante. Una vida. Un lugar.</h2>
+                    <p>
+                        Apúntate a la lista y serás de los primeros en reservar acceso a los miradores,
+                        alojamiento y actividades exclusivas del 12 de agosto de 2026.
+                    </p>
+                    <ul class="booking-list">
+                        <li>◆ Acceso prioritario a miradores</li>
+                        <li>◆ Gafas homologadas oficiales del evento</li>
+                        <li>◆ Descuentos en alojamientos y experiencias</li>
+                        <li>◆ Guía digital del eclipse</li>
+                    </ul>
+                </div>
+
+                <form class="booking-form" id="bookingForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre y apellidos</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="personas">Nº de personas</label>
+                        <select id="personas" name="personas">
+                            <option>1</option><option>2</option><option>3</option>
+                            <option>4</option><option>5+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="interes">Me interesa</label>
+                        <select id="interes" name="interes">
+                            <option>Mirador Castildetierra</option>
+                            <option>Alto de Aguilares</option>
+                            <option>Recinto Sanadrián</option>
+                            <option>Alojamiento</option>
+                            <option>Experiencias completas</option>
+                        </select>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="privacy" required>
+                        <label for="privacy">Acepto la política de privacidad y recibir información sobre el evento.</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Apúntame a la lista</button>
+                    <p class="form-success" id="formSuccess">
+                        ✓ Gracias. Te avisaremos cuando se abran las reservas.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span class="logo-icon">☀</span>
+                    <h3>Arguedas 2026</h3>
+                    <p>Eclipse total de sol · 12 de agosto de 2026</p>
+                </div>
+                <div class="footer-links">
+                    <div>
+                        <h4>Evento</h4>
+                        <ul>
+                            <li><a href="#evento">El eclipse</a></li>
+                            <li><a href="#miradores">Miradores</a></li>
+                            <li><a href="#experiencias">Experiencias</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Información</h4>
+                        <ul>
+                            <li><a href="#info">Cómo llegar</a></li>
+                            <li><a href="#info">Dónde dormir</a></li>
+                            <li><a href="#reserva">Reservas</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Contacto</h4>
+                        <ul>
+                            <li>turismo@arguedas.es</li>
+                            <li>+34 948 00 00 00</li>
+                            <li>Plaza de los Fueros, 1</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Ayuntamiento de Arguedas · Gobierno de Navarra · Reserva de la Biosfera Bardenas Reales</p>
+                <p class="footer-mini">Web promocional. Los horarios son aproximados y se actualizarán con datos oficiales del IGN.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
